@@ -1,8 +1,10 @@
 import { generateRandomNumber } from "../numbers";
 import { generateStringFromType } from "../strings";
 
-export function generateFromValue(value: any) {
+export function generateFromValue(value?: any) {
     let newValue: typeof value = null;
+
+    if (!value) return value;
 
     switch (typeof value) {
         case "string":
@@ -13,20 +15,21 @@ export function generateFromValue(value: any) {
             newValue = generateRandomNumber(value);
         break;
 
-        case "object":
+        case "object": {
             const isArray = Array.isArray(value);
 
             if (isArray) {
                 newValue = value.map((v: any) => generateFromValue(v));
             } else {
-                let newObject: any = {};
+                const newObject: any = {};
 
-                Object.keys(value).map((valueKey: any) => {
+                Object.keys(value).map((valueKey: string) => {
                     newObject[valueKey] = generateFromValue(value[valueKey]);
                 });
 
                 newValue = newObject;
             };
+        }
         break;
 
         case "boolean":
