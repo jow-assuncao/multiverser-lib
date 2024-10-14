@@ -1,0 +1,25 @@
+{
+  "name": "multiverser",
+  "version": "0.1.0",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts && cp package.json dist/",
+    "build:watch": "tsup src --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint"
+  },
+  "author": "Jonathan Assunção",
+  "license": "ISC",
+  "description": "some functions that could help you to create mocks and data with random values or from existing models",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.9.0"
+  }
+}
