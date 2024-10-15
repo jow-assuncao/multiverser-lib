@@ -1,4 +1,4 @@
-import { validateIsSpecialChar } from '../../../validators/validateIsSpecialChar'
+import { validateIsSpecialChar } from "../../validators"
 
 export function generateNearChar(char: string) {
     const multiplier = Math.round(Math.random() * 2)

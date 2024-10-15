@@ -1,8 +1,7 @@
-import { validateIsEmail } from '../../../validators/validateIsEmail'
-import { validateIsURL } from '../../../validators/validateIsURL'
-import { generateEmail } from '../generateEmail'
-import { generateNearChar } from '../generateNearChar'
-import { generateText } from '../generateText/generateText'
+import { validateIsEmail, validateIsURL } from '../../validators'
+import { generateEmail } from './generateEmail'
+import { generateNearChar } from './generateNearChar'
+import { generateText } from './generateText'
 
 export function generateStringFromType(string: string): string {
     if (validateIsEmail(string)) return generateEmail()

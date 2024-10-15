@@ -1,4 +1,4 @@
-import mussumIpsumWords from '../../../constants/mussumIpsum'
+import mussumIpsumWords from "../../constants/mussumIpsum"
 
 export function generateText(wordCount: number = 3): string {
     const result = []
