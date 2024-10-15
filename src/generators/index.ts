@@ -1,4 +1,3 @@
-export * from './generateFromValue'
+export * from './fromInput'
 export * from './strings'
 export * from './numbers'
-export * from './objects'
