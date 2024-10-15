@@ -7,4 +7,4 @@
 -   library's core
     -   string generation methods
     -   number generation methods
-    -   random object generation (by data model) methods
+    -   random object generation methods
