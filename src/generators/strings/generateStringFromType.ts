@@ -3,6 +3,11 @@ import { generateEmail } from './generateEmail'
 import { generateNearChar } from './generateNearChar'
 import { generateText } from './generateText'
 
+/**
+ * @param string string used as reference to generation.
+ * @returns generate string based on string param type. Uses validation methods to define if string is an email, url or a normal text.
+ * if string is URL the value that will be returned is the same URL.
+ */
 export function generateStringFromType(string: string): string {
     if (validateIsEmail(string)) return generateEmail()
 

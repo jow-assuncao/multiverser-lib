@@ -1,6 +1,10 @@
 import { generateRandomNumber } from '../numbers'
 import { generateStringFromType } from '../strings'
 
+/**
+ * @param value can be a string, number, boolean, array or object.
+ * @returns a copy of the value passed as param but with random values.
+ */
 export function generateFromInput(value?: any) {
     let newValue: typeof value = null
 
