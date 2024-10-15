@@ -1,1 +1,1 @@
-export * from "./generateFromValue"
+export * from './generateFromValue'

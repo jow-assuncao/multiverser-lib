@@ -1,1 +1,1 @@
-export * from "./generateArrayFromModel"
+export * from './generateArrayFromModel'

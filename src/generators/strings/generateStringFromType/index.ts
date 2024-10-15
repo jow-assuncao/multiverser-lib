@@ -1,1 +1,1 @@
-export * from "./generateStringFromType";
+export * from './generateStringFromType'

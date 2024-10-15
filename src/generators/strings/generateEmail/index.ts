@@ -1,1 +1,1 @@
-export * from "./generateEmail"
+export * from './generateEmail'

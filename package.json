@@ -8,7 +8,7 @@
     "build": "tsup src/index.ts --format esm,cjs --dts && cp package.json dist/",
     "build:watch": "tsup src --watch",
     "start": "node dist/index.js",
-    "lint": "eslint"
+    "lint": "eslint '**/*.{js,ts}' --fix"
   },
   "author": "Jonathan Assunção",
   "license": "ISC",
@@ -16,10 +16,13 @@
   "devDependencies": {
     "@eslint/js": "^9.12.0",
     "@types/node": "^22.7.4",
-    "eslint": "^9.12.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.11.0",
+    "prettier": "3.3.3",
     "tsup": "^8.3.0",
-    "typescript": "^5.6.2",
+    "typescript": "^5.5.4",
     "typescript-eslint": "^8.9.0"
   }
 }
