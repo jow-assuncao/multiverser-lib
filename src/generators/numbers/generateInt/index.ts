@@ -1,1 +1,1 @@
-export * from "./generateInt"
+export * from './generateInt'

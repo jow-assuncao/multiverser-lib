@@ -1,1 +1,1 @@
-export * from "./generateNearChar";
+export * from './generateNearChar'

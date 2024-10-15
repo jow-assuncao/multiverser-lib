@@ -1,2 +1,2 @@
-export * from "./countDecimalPlaces";
-export * from "./capitalize";
+export * from './countDecimalPlaces'
+export * from './capitalize'

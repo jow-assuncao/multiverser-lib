@@ -1,2 +1,2 @@
-export * from "./generateInt";
-export * from "./generateRandomNumber";
+export * from './generateInt'
+export * from './generateRandomNumber'

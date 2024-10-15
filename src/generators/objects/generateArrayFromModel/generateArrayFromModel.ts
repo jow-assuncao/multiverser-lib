@@ -1,4 +1,4 @@
-import { generateFromValue } from "../../generateFromValue";
+import { generateFromValue } from '../../generateFromValue'
 
 export function generateArrayFromModel(model: any, qty: number) {
     const arr: Array<typeof model> = []
@@ -6,5 +6,5 @@ export function generateArrayFromModel(model: any, qty: number) {
         arr.push(generateFromValue(model))
     }
 
-    return arr;
+    return arr
 }
