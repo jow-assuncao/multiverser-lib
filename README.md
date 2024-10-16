@@ -8,7 +8,8 @@ It's very useful for debuging, generating random data without having to create b
 ## Instalation
 
 requirements:
-- NodeJS
+
+-   NodeJS
 
 ```bash
 git clone git@github.com:jow-assuncao/multiverser-lib.git
@@ -17,4 +18,5 @@ npm install
 ```
 
 ## Author
+
 Jonathan Assunção | almeida_jn@hotmail.com

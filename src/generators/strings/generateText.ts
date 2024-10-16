@@ -1,4 +1,4 @@
-import mussumIpsumWords from '../../constants/mussumIpsum'
+import loremIpsum from '../../constants/loremIpsum'
 
 /**
  * @param wordCount used as reference to set amount of words that will be generated (default value is set to 3)
@@ -7,8 +7,8 @@ import mussumIpsumWords from '../../constants/mussumIpsum'
 export function generateText(wordCount: number = 3): string {
     const result = []
     for (let i = 0; i < wordCount; i++) {
-        const randomIndex = Math.floor(Math.random() * mussumIpsumWords.length)
-        result.push(mussumIpsumWords[randomIndex])
+        const randomIndex = Math.floor(Math.random() * loremIpsum.length)
+        result.push(loremIpsum[randomIndex])
     }
 
     return result.join(' ')
