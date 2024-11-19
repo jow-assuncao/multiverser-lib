@@ -1,5 +1,9 @@
-import { validateIsSpecialChar } from '../../../validators/validateIsSpecialChar'
+import { validateIsSpecialChar } from '../../validators'
 
+/**
+ * @param char char used as reference to get a near char in Unicode table.
+ * @returns the character that is immediately adjacent to the input character in the Unicode table.
+ */
 export function generateNearChar(char: string) {
     const multiplier = Math.round(Math.random() * 2)
 

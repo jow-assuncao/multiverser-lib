@@ -1,7 +1,11 @@
 import { generateRandomNumber } from '../numbers'
 import { generateStringFromType } from '../strings'
 
-export function generateFromValue(value?: any) {
+/**
+ * @param value can be a string, number, boolean, array or object.
+ * @returns a copy of the value passed as param but with random values.
+ */
+export function generateFromInput(value?: any) {
     let newValue: typeof value = null
 
     if (!value) return value
@@ -19,12 +23,12 @@ export function generateFromValue(value?: any) {
             const isArray = Array.isArray(value)
 
             if (isArray) {
-                newValue = value.map((v: any) => generateFromValue(v))
+                newValue = value.map((v: any) => generateFromInput(v))
             } else {
                 const newObject: any = {}
 
                 Object.keys(value).map((valueKey: string) => {
-                    newObject[valueKey] = generateFromValue(value[valueKey])
+                    newObject[valueKey] = generateFromInput(value[valueKey])
                 })
 
                 newValue = newObject
